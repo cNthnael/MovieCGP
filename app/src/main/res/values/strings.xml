@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"></string>
+    <string name="app_name">MovieCGP</string>
     <string name="search">Search</string>
     <string name="movie_title">Movie Title</string>
     <string name="movie_description">Movie Description</string>

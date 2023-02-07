@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    android:id="@+id/layoutMovie"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -13,20 +14,33 @@
 
     <TextView
         android:id="@+id/tvTitle"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/imgMovie"
+        android:layout_toEndOf="@id/imgMovie"
         android:layout_marginStart="16dp"
         android:textSize="20sp"
         android:textColor="@color/colorAccent"
         android:text="@string/movie_title"/>
 
     <TextView
+        android:id="@+id/tvRelease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imgMovie"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"
+        android:layout_below="@id/tvTitle"
+        android:text="Release"/>
+
+    <TextView
         android:id="@+id/tvDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/imgMovie"
-        android:layout_below="@id/tvTitle"
+        android:layout_toEndOf="@id/imgMovie"
+        android:layout_below="@id/tvRelease"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:maxLines="4"

@@ -11,7 +11,7 @@ public class Response {
     private Integer page;
     @SerializedName("results")
     @Expose
-    private List<Result> results;
+    private List<Result> results = null;
     @SerializedName("total_pages")
     @Expose
     private Integer totalPages;
